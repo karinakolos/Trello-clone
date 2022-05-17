@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello-clone</title>
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./scss/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="nav">
+          <div class="nav__search">
+            <input type="text" name="" id="search" class="white" />
+          </div>
+          <div class="nav__logo">Trello-Clone</div>
+          <div class="nav__secondary">
+            <button class="white nav__add">&#43;</button>
+            <div class="nav__time white"></div>
+            <div class="nav__image">
+              <img src="./image/logo.png" alt="Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <div class="todo-container">
+            <p class="todo-container__title">TODO</p>
+            <div class="todo-wrapper"></div>
+            <button class="todo-container__button">&#43; Add todo</button>
+          </div>
+          <div class="in-progress-container">
+            <p class="in-progress-container__title">in progress</p>
+            <div class="in-progress-wrapper"></div>
+          </div>
+          <div class="done-container">
+            <p class="done-container__title">done</p>
+            <div class="done-wrapper"></div>
+            <button class="done-container__button">Delete All</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__item">TODO</div>
+        <div class="popup__title">
+          <p>Title:</p>
+          <input type="text" name="" id="input-title" />
+        </div>
+        <div class="popup__description">
+          <p>Descroption:</p>
+          <input type="text" name="" id="input-description" />
+        </div>
+        <div class="popup__deadline">
+          <p>Deadline:</p>
+          <input type="date" name="" id="input-deadline" />
+        </div>
+
+        <div class="popup__button">
+          <select name="" id="select">
+            <option value="">User:</option>
+          </select>
+          <button class="popup__button-cancel">cancel</button>
+          <button class="popup__button-confirm">confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup__edit">
+      <div class="popup__edit__wrapper">
+        <div class="popup__edit__item">TODO</div>
+        <div class="popup__edit__title">
+          <p>Title:</p>
+          <input type="text" name="" id="input-title-edit" />
+        </div>
+        <div class="popup__edit__description">
+          <p>Descroption:</p>
+          <input type="text" name="" id="input-description-edit" />
+        </div>
+        <div class="popup__edit__deadline">
+          <p>Deadline:</p>
+          <input type="date" name="" id="input-deadline-edit" />
+        </div>
+        <div class="popup__edit__button">
+          <select name="" id="select-edit">
+            <option value="">User:</option>
+          </select>
+          <button class="popup__button-cancel-edit">cancel</button>
+          <button class="popup__button-confirm-edit">confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="warning-delete">
+      <div class="warning-delete__wrapper">
+        <p class="warning__button">
+          Are you sure you want to delete all tasks?
+        </p>
+        <div class="warning-delete__button">
+          <button class="warning-delete__button-cancel">cancel</button>
+          <button class="warning-delete__button-confirm">confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="warning-in-progress">
+      <div class="warning-in-progress__wrapper">
+        <p class="warning-in-progress__button">
+          WARNING! First you need to complete the current tasks before adding
+          new ones.
+        </p>
+        <div class="warning-in-progress__button">
+          <button class="warning-in-progress__button-cancel">cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
